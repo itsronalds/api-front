@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ToDo App | My Tasks</title>
+    <link rel="stylesheet" href="./css/tasks.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Tasks</h1>
+      <div>
+        <button class="btn" onclick="location.href='task_form.html'">+ New Task</button>
+        <button class="btn" onclick="logout()">Logout</button>
+      </div>
+    </header>
+    <main>
+      <ul class="task-list" id="taskList"></ul>
+      <div class="empty" id="emptyMsg" style="display: none">No tienes tareas aún.</div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ToDo App | Create Task</title>
+    <link rel="stylesheet" href="./css/task_form.css" />
+  </head>
+  <body>
+    <main>
+      <div class="back"><a href="tasks.html" class="btn">⟵ Back</a></div>
+      <h2 id="formTitle">New Task</h2>
+      <div id="errorMsg" class="error"></div>
+      <form id="taskForm">
+        <label for="title">Título</label>
+        <input type="text" id="title" required />
+        <label for="description">Descripción</label>
+        <textarea id="description" placeholder="Detalles de la tarea"></textarea>
+        <label for="status">Status</label>
+        <select name="status" id="status">
+          <option value="pending">Pending</option>
+          <option value="completed">Completed</option>
+        </select>
+        <button class="btn" type="button" onclick="saveTask()">Save</button>
+      </form>
+    </main>
+  </body>
+</html>
